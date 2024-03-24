@@ -652,22 +652,6 @@ a {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 770px) {
-  .thumbnail {
-    justify-content: start;
-  }
-  .content h2 {
-    font-size: 30px;
-  }
-  .arrow {
-    top: 10%;
-    right: 40px;
-  }
-  .slider .list .item .content {
-    width: 100%;
-  }
-}
-
 /* footer */
 .footer {
   background-color: #dbebf8;
@@ -741,5 +725,120 @@ a {
     width: 100%;
     padding: 10px;
     line-height: 1.2;
+  }
+}
+@media screen and (max-width: 770px) {
+  .thumbnail {
+    justify-content: start;
+  }
+  .content h2 {
+    font-size: 30px;
+  }
+  .arrow {
+    top: 10%;
+    right: 40px;
+  }
+  .slider .list .item .content {
+    width: 100%;
+  }
+  .nav__align {
+    display: block;
+  }
+  .navbar {
+    display: block;
+    margin: 10px;
+    position: relative;
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+  .navbar__links,
+  .navbar__links a {
+    display: block;
+  }
+  .header__detail {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px;
+    margin-top: 0px;
+    height: auto;
+    padding: 30px 10px;
+    border-radius: 0px;
+  }
+  .blob__img {
+    display: none;
+  }
+  .experience__info {
+    display: block;
+  }
+
+  .skill__title p {
+    margin: 0px 0px;
+  }
+  .for__skill div {
+    margin: 0px 0px 0px 10px;
+    width: 95%;
+  }
+  .skill__title h2 {
+    width: auto;
+  }
+  .slider {
+    margin: 10px;
+  }
+  .thumbnail .item .content {
+    position: absolute;
+    bottom: 0;
+  }
+  .image__second {
+    width: 90%;
+    height: auto;
+  }
+  .thumbnail {
+    position: absolute;
+    bottom: 10px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 0 0px;
+    overflow: auto;
+    box-sizing: border-box;
+    margin-left: 0px;
+  }
+  .form__sec {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 80px 0px;
+  }
+  .footer-links {
+    display: block;
+  }
+  .contact__me {
+    display: none;
+  }
+  .navbar__menu {
+    position: absolute;
+    width: 90%;
+    margin-top: 5px;
+  }
+  .navbar__toggle {
+    display: block;
+    text-decoration: none !important;
+  }
+
+  /* styles.css */
+  .navbar__menu {
+    display: none; /* Hide the menu by default */
+  }
+  .active {
+    display: block; /* Show the menu when active class is added */
+  }
+  /* styles.css */
+  .close-icon {
+    display: none; /* Hide the close icon by default */
+  }
+  .active .close-icon {
+    display: inline; /* Show the close icon when menu is active */
   }
 }
