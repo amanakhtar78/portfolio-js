@@ -265,9 +265,9 @@ a {
   left: -150px;
 }
 .image__standing {
+  height: 450px;
+  width: auto;
   z-index: 400;
-  mix-blend-mode: darken;
-  background-color: #ccc;
   position: relative;
   transition: 1s ease-in-out all;
 }
