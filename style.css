@@ -266,6 +266,8 @@ a {
 }
 .image__standing {
   z-index: 400;
+  mix-blend-mode: darken;
+  background-color: #ccc;
   position: relative;
   transition: 1s ease-in-out all;
 }
