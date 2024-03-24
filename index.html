@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <p class="toalign"></p>
     <header class="nav__align" id="header">
       <nav class="navbar">
         <header class="logo__button">
@@ -83,9 +84,11 @@
       <header class="header__detail">
         <section class="sec1__detail">
           <div class="info__header">
-            <h1>Hi, I'm <span class="span__name"> Aman </span></h1>
-            <h2>Full Stack Developer</h2>
-            <p>
+            <h1 class="name__intro">
+              Hi, I'm <span class="span__name"> Aman </span>
+            </h1>
+            <h2 class="work__intro">Full Stack Developer</h2>
+            <p class="discription__intro">
               Empowering Experiences through Exceptional Design, Dynamic
               Development, and Thriving Competition: Unleashing Innovation and
               Driving Technological Advancement with Passion and Precision.
@@ -296,6 +299,12 @@
             <p>HTML, CSS, JavaScript, and Tailwind CSS.</p>
           </div>
         </div>
+        <img
+          src="./images/right-arrow-next-svgrepo-com.svg"
+          height="40"
+          width="40"
+          alt=""
+        />
         <div class="experience-item">
           <div class="img__work__location">
             <img
@@ -331,6 +340,12 @@
             <p>HTML, CSS, JavaScript, and Tailwind CSS.</p>
           </div>
         </div>
+        <img
+          src="./images/right-arrow-next-svgrepo-com.svg"
+          height="40"
+          width="40"
+          alt=""
+        />
         <div class="experience-item">
           <div class="img__work__location">
             <img
@@ -359,14 +374,352 @@
             </p>
           </aside>
 
-          <h4 class="experience_position">
-            Software Development Engineer {Intern}
-          </h4>
+          <h4 class="experience_position">Software Development Engineer 1</h4>
           <div class="experience-details">
             <p>HTML, CSS, JavaScript, and Tailwind CSS.</p>
           </div>
         </div>
       </section>
+    </div>
+    <!-- tech known -->
+
+    <section class="for__skill">
+      <aside class="skill__title">
+        <aside>
+          <p></p>
+          <span> <h2>SKILLS</h2></span>
+        </aside>
+      </aside>
+      <div>
+        <picture
+          ><img
+            src="./images/html-5-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>HTML</h1>
+        </picture>
+        <picture
+          ><img
+            src="./images/css-3-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>CSS</h1></picture
+        >
+        <picture
+          ><img
+            src="./images/js-official-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>JS</h1></picture
+        >
+        <picture
+          ><img
+            src="./images/bootstrap-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>bootstrap</h1></picture
+        >
+        <picture
+          ><img src="./images/tailwind.png" height="100" width="100" alt="" />
+          <h1>tailwind</h1></picture
+        >
+        <picture
+          ><img
+            src="./images/react-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>react</h1></picture
+        >
+        <picture
+          ><img
+            src="./images/next-js-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>next-js</h1></picture
+        >
+        <picture
+          ><img
+            src="./images/nodejs-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>nodejs</h1></picture
+        >
+        <picture
+          ><img src="./images/expressjs.png" height="100" width="100" alt="" />
+          <h1>expressjs</h1></picture
+        >
+
+        <picture
+          ><img src="./images/typescript.png" height="100" width="100" alt="" />
+          <h1>typescript</h1></picture
+        >
+        <picture
+          ><img
+            src="./images/git-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>git</h1></picture
+        >
+        <picture
+          ><img
+            src="./images/mongodb-svgrepo-com.svg"
+            height="100"
+            width="100"
+            alt=""
+          />
+          <h1>mongodb</h1></picture
+        >
+        <picture
+          ><img src="./images/gsap.png" height="100" width="100" alt="" />
+          <h1>gsap</h1></picture
+        >
+      </div>
+    </section>
+    <article id="formm" class="form__sec">
+      <div>
+        <h1 class="form-heading">Plese fill the Form</h1>
+
+        <aside class="form__style">
+          <label class="form-label" for="name" required>Name:</label>
+
+          <input class="form-input" type="text" id="sendername" />
+          <label class="form-label" for="phone" required>Phone:</label>
+
+          <input class="form-input" type="number" id="phone" />
+          <label class="form-label" for="email">Email:</label>
+          <input class="form-input" type="email" id="emailIs" />
+
+          <label class="form-label" for="narration">Narration:</label>
+
+          <textarea
+            class="form-input"
+            id="message"
+            cols="40"
+            rows="8"
+          ></textarea>
+
+          <input
+            class="form-submit"
+            onclick="sendMail();"
+            type="submit"
+            value="Submit"
+          />
+        </aside>
+      </div>
+      <div class="default__none">
+        main (Email)
+        <input type="text" id="to" value="amanakhtar991@gmail.com" /> <br />
+        ccc (Email)
+        <input type="text" id="ccc" value="amanakhtar881@gmail.com" /> <br />
+        Subject
+        <input type="text" id="subject" value="default query regarding case" />
+      </div>
+      <script>
+        function sendMail() {
+          (function () {
+            emailjs.init("V4ff4_ZX6I5o9dLIC"); // Replace with your User ID
+          })();
+
+          var sendername = document.querySelector("#sendername").value;
+          var phone = document.querySelector("#phone").value;
+          var emailIs = document.querySelector("#emailIs").value;
+          var message = document.querySelector("#message").value;
+
+          // Custom validation for name (required)
+          if (sendername.trim() === "") {
+            alert("Please enter your name.");
+            return; // Prevent form submission if name is not filled
+          }
+
+          // Custom validation for phone number (at least 10 digits)
+          if (phone.length < 10) {
+            alert("Phone number must be at least 10 digits long.");
+            return; // Prevent form submission if phone number is less than 10 digits
+          }
+
+          var params = {
+            sendername: sendername,
+            to: document.querySelector("#to").value,
+            subject: document.querySelector("#subject").value,
+            phone: phone,
+            message: message,
+            emailIs: emailIs,
+            ccc: document.querySelector("#ccc").value,
+          };
+
+          var serviceID = "service_ahkiimx"; // Replace with your Email Service ID
+          var templateID = "template_meiegsj"; // Replace with your Email Template ID
+
+          emailjs
+            .send(serviceID, templateID, params)
+            .then((res) => {
+              // Show SweetAlert message on success
+              Swal.fire({
+                icon: "success",
+                title: "Thank you!",
+                text: "We will contact you soon.",
+              });
+            })
+            .catch((error) => {
+              // Show SweetAlert message on error
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Failed to send email. Please try again later.",
+              });
+            });
+        }
+      </script>
+
+      <img
+        src="./images/form.png"
+        alt="law"
+        height="500px"
+        width="500px"
+        alt=""
+        class="image__second"
+      />
+    </article>
+    <div class="slider">
+      <!-- list items starts here -->
+      <div class="list">
+        <div class="item active">
+          <img src="./imagesSlide/ecommerce.png" alt="" />
+          <div class="content">
+            <p>2023-Inprogress</p>
+            <h2>E-commerce Website</h2>
+            <p>
+              This e-commerce website was built using modern web technologies
+              such as React.js for the frontend and Node.js for the backend. The
+              frontend is designed using HTML, CSS, and styled-components. It
+              features a responsive design to ensure compatibility across
+              various devices. The backend utilizes Express.js for routing and
+              MongoDB as the database to store product information and user
+              data. Payment processing is handled securely using Stripe
+              integration.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imagesSlide/law.png" alt="" />
+          <div class="content">
+            <p>
+              2023-2023
+              <a
+                href="https://amanakhtar78.github.io/LawFirmJsEmail/"
+                class="link__project"
+              >
+                Link --&gt;</a
+              >
+            </p>
+            <h2>Legal Case Management System</h2>
+            <p>
+              The legal case management system is a comprehensive solution for
+              law firms to manage their cases efficiently. It is developed using
+              the MERN stack, consisting of MongoDB, Express.js, React.js, and
+              Node.js. The system allows lawyers to track case details, manage
+              client information, schedule appointments, and generate legal
+              documents. Advanced search and reporting functionalities provide
+              insights into case status and performance.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imagesSlide/salon.png" alt="" />
+          <div class="content">
+            <p>
+              2023-2024
+              <a
+                href="https://amanakhtar78.github.io/beauty-and-bright/"
+                class="link__project"
+              >
+                Link --&gt;</a
+              >
+            </p>
+            <h2>Salon Management System</h2>
+            <p>
+              The salon management system is a software solution tailored for
+              salon owners to streamline their operations. It is developed using
+              technologies like React.js for the frontend and Node.js for the
+              backend. The frontend is designed with HTML, CSS, and Sass to
+              create an intuitive user interface. Features include appointment
+              scheduling, client management, inventory tracking, and employee
+              scheduling. The system ensures smooth salon operations and
+              enhances customer satisfaction.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imagesSlide/wonder.png" alt="" />
+          <div class="content">
+            <p>
+              2019-2024
+              <a
+                href="https://amanakhtar78.github.io/sliderWonder/"
+                class="link__project"
+              >
+                Link --&gt;</a
+              >
+            </p>
+            <h2>Travel Website</h2>
+            <p>
+              The travel website is a platform designed to help users discover
+              and plan their travel experiences. It is developed using a
+              combination of frontend and backend technologies. The frontend
+              utilizes React.js for building interactive user interfaces, while
+              the backend is powered by Node.js and Express.js for handling
+              server-side logic and API requests. MongoDB is used as the
+              database to store travel destinations, user profiles, and booking
+              information. The website offers features such as destination
+              search, itinerary planning, user reviews, and booking integration
+              with third-party travel services.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- list items ends here -->
+      <!-- button starts here -->
+      <div class="arrow">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- button ends here -->
+      <!-- thumnail starts here -->
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="./imagesSlide/ecommerce_logo.png" alt="" />
+          <div class="content">ecommerce</div>
+        </div>
+        <div class="item">
+          <img src="./imagesSlide/law_logo.png" alt="" />
+          <div class="content">law</div>
+        </div>
+        <div class="item">
+          <img src="./imagesSlide/salon_logo.png" alt="" />
+          <div class="content">salon</div>
+        </div>
+        <div class="item">
+          <img src="./imagesSlide/wonder_logo.png" alt="" />
+          <div class="content">wonder</div>
+        </div>
+      </div>
     </div>
     <div class="experience">
       <div class="experience_title">
@@ -403,6 +756,12 @@
             </p>
           </aside>
         </div>
+        <img
+          src="./images/right-arrow-next-svgrepo-com.svg"
+          height="40"
+          width="40"
+          alt=""
+        />
         <div class="experience-item">
           <div class="img__work__location">
             <img
@@ -431,6 +790,12 @@
             </p>
           </aside>
         </div>
+        <img
+          src="./images/right-arrow-next-svgrepo-com.svg"
+          height="40"
+          width="40"
+          alt=""
+        />
         <div class="experience-item">
           <div class="img__work__location">
             <img
@@ -461,7 +826,58 @@
         </div>
       </section>
     </div>
+    <div>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer__link">
+            <ul class="footer-links">
+              <li>
+                <a href="#header">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.freepik.com/free-vector/mobile-login-concept-illustration_5202813.htm#query=login%20green&position=6&from_view=search&track=ais"
+                >
+                  Image by storyset on Freepik
+                </a>
+              </li>
+            </ul>
+            <div class="social-media-links">
+              <div class="link__site">
+                <a href="https://github.com/amanakhtar78"> git </a>
+                <a href="https://www.linkedin.com/in/aman-akhtar-b1728b205/">
+                  linkedin
+                </a>
+                <a href=""> instagram </a>
+                <a href="https://www.codechef.com/users/amanakhtar991">
+                  codechef
+                </a>
+                <a href="https://leetcode.com/amanakhtar991/"> leetcode </a>
+              </div>
+            </div>
+            <h4 style="margin-left: 10px">Email: amanakhtar881@gmail.com</h4>
+          </div>
+        </div>
+        <p class="para__footer">
+          The content, graphics, design elements, and other materials on this
+          website are protected by copyright laws and international treaties.
+        </p>
+      </footer>
 
+      <p class="last__fotter__line">
+        &copy; 2024 Your Company. All rights reserved.
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
