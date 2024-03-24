@@ -104,3 +104,32 @@ gsap.to(".aside__font", {
     toggleClass: "red",
   },
 });
+
+// script.js
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+  // Get references to the menu icon and close icon
+  const menuIcon = document.querySelector(".menu-icon");
+  const closeIcon = document.querySelector(".close-icon");
+  const navbarMenu = document.querySelector(".navbar__menu");
+
+  // Add click event listener to the menu icon
+  menuIcon.addEventListener("click", function () {
+    // Hide the menu icon
+    this.style.display = "none";
+    // Show the close icon
+    closeIcon.style.display = "inline";
+    // Add the 'active' class to navbar__menu
+    navbarMenu.classList.add("active");
+  });
+
+  // Add click event listener to the close icon
+  closeIcon.addEventListener("click", function () {
+    // Show the menu icon
+    menuIcon.style.display = "inline";
+    // Hide the close icon
+    this.style.display = "none";
+    // Remove the 'active' class from navbar__menu
+    navbarMenu.classList.remove("active");
+  });
+});
