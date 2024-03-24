@@ -248,34 +248,6 @@ a {
   gap: 20px;
 }
 
-.section2__img {
-  position: relative;
-}
-.blob__img {
-  position: absolute;
-  width: 450px;
-  height: auto;
-  z-index: 50;
-  top: 50px;
-  left: -150px;
-}
-.image__standing {
-  z-index: 400;
-  mix-blend-mode: multiply;
-  background-color: #ccc;
-  position: relative;
-  transition: 1s ease-in-out all;
-}
-
-.blob__img:hover {
-  position: absolute;
-  width: 350px;
-  height: auto;
-  z-index: 50;
-  top: 30px;
-  left: -170px;
-  transition: 1s ease-in-out all;
-}
 .span__name {
   color: rgb(255, 47, 0);
 }
