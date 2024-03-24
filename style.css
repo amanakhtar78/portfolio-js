@@ -841,4 +841,21 @@ a {
   .active .close-icon {
     display: inline; /* Show the close icon when menu is active */
   }
+  .footer {
+    min-height: auto;
+  }
+  .footer-links a {
+    font-size: 16px;
+    margin: 5px 0px;
+  }
+  .navbar__links li {
+    margin: 10px 0px;
+  }
+  .info__header p {
+    width: 90%;
+  }
+  .experience__info > img {
+    transform: rotate(90deg);
+    margin: 15px;
+  }
 }
