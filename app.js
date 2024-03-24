@@ -92,7 +92,7 @@ gsap.to(".logo__button", {
 });
 gsap.to(".aside__font", {
   x: -150,
-  y: 170,
+  y: 150,
   duration: 3,
   scrollTrigger: {
     trigger: ".aside__font",
@@ -100,7 +100,7 @@ gsap.to(".aside__font", {
     start: "top 0",
 
     // end: () => `+=${document.querySelector(".square").offsetHeight}`,
-    markers: true,
+    // markers: true,
     toggleClass: "red",
   },
 });
