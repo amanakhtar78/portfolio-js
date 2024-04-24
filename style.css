@@ -396,6 +396,7 @@ a {
   padding: 30px;
   border-radius: 0px 20px;
   margin-left: 100px;
+  box-shadow: 5px 10px 5px #0000004f;
 }
 .for__skill picture {
   display: flex;
@@ -449,13 +450,13 @@ a {
   flex-wrap: wrap;
 }
 .form__style {
-  background-color: var(--color-bg-nav);
-  color: var(--color-text);
+  /* background-color: var(--color-bg-nav); */
+  /* color: var(--color-text); */
   margin: 10px;
   font-size: 20px;
   padding: 20px 30px;
   width: 400px;
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -479,10 +480,11 @@ a {
 .form-submit {
   padding: 10px 20px;
   border: none;
+  width: 100%;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 30% 5% 30% 5%;
+  border-radius: 25px;
   background-color: var(--card-bg-button) !important;
   color: var(--card-text-button);
   border: 1px solid;
@@ -501,8 +503,9 @@ a {
   border-radius: 50px;
 }
 .slider {
-  height: 95vh;
-  margin: 100px;
+  height: 90vh;
+  margin: 0px 100px;
+
   border-radius: 50px;
 
   position: relative;
@@ -684,7 +687,13 @@ a {
 
 .footer-links a {
   color: #333;
+  font-size: 16px;
   text-decoration: underline;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-links a:hover {
@@ -778,6 +787,19 @@ a {
   .for__skill div {
     margin: 0px 0px 0px 10px;
     width: 95%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .for__skill h1 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .for__skill picture {
+    padding: 10px;
+  }
+  .for__skill div img {
+    height: 50px;
+    width: 50px;
   }
   .skill__title h2 {
     width: auto;
@@ -842,7 +864,11 @@ a {
     display: inline; /* Show the close icon when menu is active */
   }
   .footer {
-    min-height: auto;
+    height: auto;
+    font-size: 14px;
+  }
+  .last__fotter__line {
+    font-size: 14px;
   }
   .footer-links a {
     font-size: 16px;
@@ -851,11 +877,17 @@ a {
   .navbar__links li {
     margin: 10px 0px;
   }
+  .footer__link {
+    line-height: 30px;
+  }
   .info__header p {
     width: 90%;
   }
   .experience__info > img {
     transform: rotate(90deg);
     margin: 15px;
+  }
+  .form__style {
+    width: 95%;
   }
 }
