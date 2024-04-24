@@ -90,20 +90,6 @@ gsap.to(".logo__button", {
   y: 10,
   duration: 2,
 });
-gsap.to(".aside__font", {
-  x: -150,
-  y: 150,
-  duration: 3,
-  scrollTrigger: {
-    trigger: ".aside__font",
-    scrub: 3,
-    start: "top 0",
-
-    // end: () => `+=${document.querySelector(".square").offsetHeight}`,
-    // markers: true,
-    toggleClass: "red",
-  },
-});
 
 // script.js
 // script.js
