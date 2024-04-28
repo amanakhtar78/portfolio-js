@@ -230,6 +230,9 @@ a {
   border: 2px solid black;
   box-shadow: 10px 5px 5px var(--color-text);
 }
+.aside__font a {
+  text-decoration: none;
+}
 .aside__font svg:hover {
   font-size: 20px;
   cursor: pointer;
